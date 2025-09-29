@@ -1,4 +1,4 @@
-import React, { forwardRef, useMemo } from "react";
+import { forwardRef, useMemo } from "react";
 
 type HeartProps = {
   text: string;
@@ -21,7 +21,7 @@ function wrapText(text: string, maxCharsPerLine = 24) {
     }
   });
   if (line) lines.push(line);
-  return lines.slice(0, 7); // safety: cap lines so it doesn't overflow forever
+  return lines.slice(0, 7); // cap lines to avoid overflow
 }
 
 export const Heart = forwardRef<SVGSVGElement, HeartProps>(
@@ -54,7 +54,7 @@ export const Heart = forwardRef<SVGSVGElement, HeartProps>(
           opacity="0.12"
         />
 
-        {/* Message block */}
+        {/* Message text */}
         <g>
           {lines.map((ln, i) => (
             <text
