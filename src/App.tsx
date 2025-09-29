@@ -2,6 +2,7 @@ import { useState } from "react";
 import MessageComposer from "./MessageComposer";
 import FloatingHearts from "./decor/FloatingHearts";
 
+
 export default function App() {
   const [open, setOpen] = useState(false);
 
