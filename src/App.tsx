@@ -8,19 +8,19 @@ export default function App() {
   return (
     <div
       style={{
-        position: "relative",   // important
+        position: "relative",
         padding: 32,
         maxWidth: 1200,
         margin: "0 auto",
         color: "#e6e6e6",
         background: "#0b0e11",
         minHeight: "100vh",
-        overflow: "hidden",     // so hearts don't show outside
+        overflow: "hidden",
       }}
     >
       {!open ? (
         <>
-          <FloatingHearts count={22} zIndex={0} />
+          <FloatingHearts count={18} zIndex={0} />
 
           <header
             style={{
@@ -65,7 +65,7 @@ export default function App() {
           >
             <p style={{ margin: 0, lineHeight: 1.6, opacity: 0.85 }}>
               Tap <b>Compose</b> to write your message. On mobile, <b>Share image</b> sends your
-              heart as a PNG to WhatsApp/iMessage. On desktop, the image downloads.
+              heart as a PNG to WhatsApp/iMessage. On desktop the image downloads.
             </p>
           </div>
         </>
