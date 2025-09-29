@@ -64,8 +64,7 @@ export default function App() {
             }}
           >
             <p style={{ margin: 0, lineHeight: 1.6, opacity: 0.85 }}>
-              Tap <b>Compose</b> to write your message. On mobile, <b>Share image</b> sends your
-              heart as a PNG to WhatsApp/iMessage. On desktop the image downloads.
+              Tap <b>Compose</b> to write your message. Be as creative as you want and perhaps become a poet.
             </p>
           </div>
         </>
